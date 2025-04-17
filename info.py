@@ -35,12 +35,12 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002567856061'))  #Log Channel Id
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002567856061'))  #Streming Log Channel Id
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002447923581'))  #Movie Update Channel Id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002520222866')) #Premium Subscription Log Channel Id
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002447923581') #Movie Request Channel Id
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002393184501') #Movie Request Channel Id
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002491588102') #Support Chat Id
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://nr385708:bs6GdimYoAzmHbRF@cluster0.xtpwl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #MongoDB Url
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://keshavrajlkr2:JKAY9Xji3uwsY78D@cluster0.fqosisu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #MongoDB Url
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 
@@ -48,14 +48,14 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviebazaar7')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+L0I60NOQIaIzYjc1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movierequest707')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movie_bazaar07')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Searching7_filebot')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+L0I60NOQIaIzYjc1')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/movie_bazaar07')
 
 #Force Subscription Channel (Put Same Channel Id In Both Veriables)
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002447923581')) 
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002447923581'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002409869914')) 
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002409869914'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002638205239')) #Verification Channel Id 
@@ -67,14 +67,14 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/how_to_downlod_7")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/how_to_downlod_7")
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "5f1f147761b7ab694e1c2d26dfe05adf088536c2")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "teraboxlinks.com")
+SHORTENER_API = environ.get("SHORTENER_API", "a54c628fd7b08c6bacde48f4f95cb82f312a1d53")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "gplinks.com")
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "5f1f147761b7ab694e1c2d26dfe05adf088536c2")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "teraboxlinks.com")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "a54c628fd7b08c6bacde48f4f95cb82f312a1d53")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "gplinks.com")
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "5f1f147761b7ab694e1c2d26dfe05adf088536c2")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "teraboxlinks.com")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "a54c628fd7b08c6bacde48f4f95cb82f312a1d53")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "gplinks.com")
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
@@ -82,7 +82,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 #Othes
 TMDB_API = environ.get("TMDB_API", "6abcb6bb99fb77f33c37016a28866ed2")
 MOVIE_UPDATE_NOTIFICATION = bool(environ.get("MOVIE_UPDATE_NOTIFICATION", True))
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
@@ -97,7 +97,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
@@ -105,8 +105,8 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
-PM_SEARCH = bool(environ.get('PM_SEARCH', True)) 
-EMOJI_MODE = bool(environ.get('EMOJI_MODE', False)) 
+PM_SEARCH = bool(environ.get('PM_SEARCH', False)) 
+EMOJI_MODE = bool(environ.get('EMOJI_MODE', True)) 
 
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
 QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160P", ""]
