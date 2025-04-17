@@ -54,8 +54,8 @@ OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Searching7_filebot')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+L0I60NOQIaIzYjc1')
 
 #Force Subscription Channel (Put Same Channel Id In Both Veriables)
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002393184501')) 
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002393184501'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002447923581')) 
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002447923581'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002638205239')) #Verification Channel Id 
