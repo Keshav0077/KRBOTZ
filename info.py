@@ -81,13 +81,13 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 
 #Othes
 TMDB_API = environ.get("TMDB_API", "6abcb6bb99fb77f33c37016a28866ed2")
-MOVIE_UPDATE_NOTIFICATION = bool(environ.get("MOVIE_UPDATE_NOTIFICATION", False))
+MOVIE_UPDATE_NOTIFICATION = bool(environ.get("MOVIE_UPDATE_NOTIFICATION", True))
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support Chat Link
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/moviesbazaarsupp') #Support Chat Link
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
