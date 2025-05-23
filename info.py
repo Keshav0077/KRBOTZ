@@ -138,9 +138,9 @@ else:
     ON_HEROKU = False
 HAS_SSL = bool(getenv('HAS_SSL', True))
 if HAS_SSL:
-    URL = "https://cooing-joey-nitish7-34879936.koyeb.app/".format(FQDN)
+    URL = "https://nervous-romonda-keshavraj-38c7a22e.koyeb.app/".format(FQDN)
 else:
-    URL = "https://cooing-joey-nitish7-34879936.koyeb.app/".format(FQDN)
+    URL = "https://nervous-romonda-keshavraj-38c7a22e.koyeb.app/".format(FQDN)
 
 
 REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"]
