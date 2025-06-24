@@ -78,8 +78,20 @@ async def send_movie_update(bot, file_name, caption):
         search_movie = file_name.replace(" ", "-")
         unique_id = generate_unique_id(search_movie)
         reaction_counts[unique_id] = {"❤️": 0, "👍": 0, "👎": 0, "🔥": 0}
-        user_reactions[unique_id] = {}        
-        full_caption = SILENTX_UPDATE_CAPTION.format(file_name, kind, quality, pixel, language, imdb_link)
+        user_reactions[unique_id] = {}
+        # New Section: Telegram Files
+        telegram_files = """
+📁 <b>Telegram Files ✨</b>
+
+🧱 <b>1080P</b> : <a href="https://t.me/YourChannel/1">2.4GB</a> 🚀  
+🧱 <b>720P</b>  : <a href="https://t.me/YourChannel/2">1.3GB</a> 🚀  
+🧱 <b>480P</b>  : <a href="https://t.me/YourChannel/3">713MB</a> 🚀 | <a href="https://t.me/YourChannel/4">421MB</a> 🚀  
+🧱 <b>480P</b>  : <a href="https://t.me/YourChannel/5">249MB</a> 🚀
+"""
+
+        full_caption = SILENTX_UPDATE_CAPTION.format(
+            file_name, kind, quality, pixel, language, imdb_link
+        ) + "\n\n" + telegram_files
         buttons = [[
             InlineKeyboardButton(f"❤️ {reaction_counts[unique_id]['❤️']}", callback_data=f"r_{unique_id}_{search_movie}_heart"),                
             InlineKeyboardButton(f"👍 {reaction_counts[unique_id]['👍']}", callback_data=f"r_{unique_id}_{search_movie}_like"),
